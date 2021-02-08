@@ -6,9 +6,9 @@
     <title><%= application_name %></title>
     <%= stylesheet_link_tag 'application' %>
     <% if ShopifyApp.use_webpacker? %>
-      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
     <% else %>
-      <%= javascript_include_tag 'application', "data-turbolinks-track" => true %>
+      <%= javascript_include_tag 'application', "data-turbo-track" => true %>
     <% end %>
     <%= csrf_meta_tags %>
   </head>
@@ -33,7 +33,7 @@
     } ) %>
 
     <% if content_for?(:javascript) %>
-      <div id="ContentForJavascript" data-turbolinks-temporary>
+      <div id="ContentForJavascript" data-turbo-temporary>
         <%= yield :javascript %>
       </div>
     <% end %>

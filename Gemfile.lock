@@ -218,9 +218,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     thor (1.1.0)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
+    turbo-rails (0.5.9)
+      rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     web-console (4.1.0)
@@ -259,7 +258,7 @@ DEPENDENCIES
   selenium-webdriver
   shopify_app!
   spring
-  turbolinks (~> 5)
+  turbo-rails (~> 0.5.7)
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
