@@ -18,5 +18,8 @@ module ShopifyHotwireSample
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # TODO: Remove when shopify_app will become compatible with Rails 6.1
+    config.action_dispatch.cookies_same_site_protection = nil
   end
 end
