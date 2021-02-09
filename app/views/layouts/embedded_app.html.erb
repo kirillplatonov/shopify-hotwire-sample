@@ -2,25 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <% application_name = ShopifyApp.configuration.application_name %>
-    <title><%= application_name %></title>
-    <%= stylesheet_link_tag 'application' %>
-    <% if ShopifyApp.use_webpacker? %>
-      <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
-    <% else %>
-      <%= javascript_include_tag 'application', "data-turbo-track" => true %>
-    <% end %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-preview">
     <%= csrf_meta_tags %>
+
+    <title><%= content_for(:title) %></title>
+
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
   </head>
 
   <body>
-    <div class="app-wrapper">
-      <div class="app-content">
-        <main role="main">
-          <%= yield %>
-        </main>
-      </div>
-    </div>
+    <%= yield %>
 
     <%= render 'layouts/flash_messages' %>
 
@@ -29,11 +22,12 @@
     <%= content_tag(:div, nil, id: 'shopify-app-init', data: {
       api_key: ShopifyApp.configuration.api_key,
       shop_origin: @shop_origin || (@current_shopify_session.domain if @current_shopify_session),
+      load_path: params[:return_to] || home_path,
       debug: Rails.env.development?
     } ) %>
 
     <% if content_for?(:javascript) %>
-      <div id="ContentForJavascript" data-turbo-temporary>
+      <div id="ContentForJavascript">
         <%= yield :javascript %>
       </div>
     <% end %>

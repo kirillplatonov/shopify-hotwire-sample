@@ -818,20 +818,15 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hotwired/turbo-rails@^7.0.0-beta.5":
-  version "7.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.0.0-beta.5.tgz#a0efdb7a20613845c43afe6f376b353e62f7e68d"
-  integrity sha512-zj+ZYbs2IHeJHtLavcLX5K0oW/3K8s3zjok4lpujxqLactp3OpuqBZxKBr+tgODnAX/WYFoKLpzivyx3xVRfTw==
+"@hotwired/turbo-rails@7.0.0-beta.4":
+  version "7.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.0.0-beta.4.tgz#d73bf87852280b86ef64eb0604dc494fc641443f"
+  integrity sha512-vlI8nS/zWbm+ITW6HrDXCbEM/r0N6tWX+bHIWLNnn3qKyAkRJJo1jPCXLPtymPmxyH2QxnII5/giBbji6u6SKw==
   dependencies:
-    "@hotwired/turbo" "^7.0.0-beta.4"
+    "@hotwired/turbo" "^7.0.0-beta.3"
     "@rails/actioncable" "^6.1.0"
 
-"@hotwired/turbo@^7.0.0-beta.4":
-  version "7.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.0.0-beta.4.tgz#be6d7014902d45121f56358d360e0810bad4c19e"
-  integrity sha512-koox7UeA2Na0tLBPesxNO3nk/gtezRxF33NHKbAx+zv5s2k1Xh/orB5xNr5dAckoUj3Pdpytnw41WH4QB1jYBg==
-
-"@hotwired/turbo@https://github.com/kirillplatonov/turbo":
+"@hotwired/turbo@^7.0.0-beta.3", "@hotwired/turbo@https://github.com/kirillplatonov/turbo":
   version "7.0.0-beta.3"
   resolved "https://github.com/kirillplatonov/turbo#9f11f628175acfc98549e3ca6ea18be8084ae85d"
 
@@ -903,6 +898,18 @@
     webpack-assets-manifest "^3.1.1"
     webpack-cli "^3.3.12"
     webpack-sources "^1.4.3"
+
+"@shopify/app-bridge-utils@^1.29.0":
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-1.29.0.tgz#fccc01fe68f114930d08376bce7ae0683d17532b"
+  integrity sha512-FLUd7G5fWnaGOmZ5SGpyiUQSH6EzA7esr1G5BZdfojwPzsAgvX2L1F3zxNews1mPkr79sZT7RdIMkMVI1hBHEg==
+  dependencies:
+    "@shopify/app-bridge" "^1.29.0"
+
+"@shopify/app-bridge@^1.29.0":
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-1.29.0.tgz#217a7cc4cf8ccb51d76e87e6800bca9b9af61673"
+  integrity sha512-gaGHjs9Ov0FLbjGnysrXDYU8r+WI+SKlORkmtJRbAR+Wq3/nlegvopY24/1P5R6bCPgoH+LBH0U9E31ZVCxbpw==
 
 "@types/glob@^7.1.1":
   version "7.1.3"

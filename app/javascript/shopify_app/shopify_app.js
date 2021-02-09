@@ -1,3 +1,6 @@
+import { Turbo } from "@hotwired/turbo-rails";
+import { getSessionToken } from "@shopify/app-bridge-utils";
+
 document.addEventListener('DOMContentLoaded', () => {
   var data = document.getElementById('shopify-app-init').dataset;
   var AppBridge = window['app-bridge'];
@@ -7,9 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     shopOrigin: data.shopOrigin,
   });
 
-  var actions = AppBridge.actions;
-  var TitleBar = actions.TitleBar;
-  TitleBar.create(app, {
-    title: data.page,
-  });
+  // Redirect to the requested page
+  Turbo.visit(data.loadPath);
+});
+
+// Intercept every Turbo request and load Shopify session token
+Turbo.setRequestInterceptor(async (request) => {
+  const token = await getSessionToken(window.app);
+  request.addHeader("Authorization", `Bearer ${token}`);
 });
