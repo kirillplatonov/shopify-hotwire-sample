@@ -19,3 +19,16 @@ Turbo.setRequestInterceptor(async (request) => {
   const token = await getSessionToken(window.app);
   request.addHeader("Authorization", `Bearer ${token}`);
 });
+
+// Force redirect via turbo using turbo_redirect_to helper in controller.
+// Mandatory for Safari since it's loosing JWT token during 302 redirect.
+document.addEventListener("turbo:before-fetch-response", (event) => {
+  const response = event.detail.fetchResponse;
+  const status = response.statusCode;
+  const location = response.header("Location");
+
+  if (status === 300 && location !== null) {
+    event.preventDefault();
+    Turbo.visit(location);
+  }
+});
