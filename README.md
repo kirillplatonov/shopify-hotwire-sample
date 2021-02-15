@@ -13,7 +13,6 @@ Alternatively you can run this command to generate `.env` file.
 ```
 shopify connect
 ```
-> __Note:__ Don't use `shopify connect` with production apps. It will update you application URLs.
 
 2. Install dependencies and prepare DB:
 ```
