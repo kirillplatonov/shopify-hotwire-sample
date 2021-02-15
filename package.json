@@ -8,6 +8,7 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.2.1",
+    "@shopify/app-bridge": "^1.29.0",
     "@shopify/app-bridge-utils": "^1.29.0"
   },
   "version": "0.1.0",
