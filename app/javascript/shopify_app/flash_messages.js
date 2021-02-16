@@ -1,7 +1,7 @@
-import { Toast } from '@shopify/app-bridge';
-
 document.addEventListener("turbo:load", (event) => {
   const flashData = JSON.parse(document.getElementById('shopify-app-flash').dataset.flash);
+
+  var Toast = window['app-bridge'].actions.Toast;
 
   if (flashData.notice) {
     Toast.create(app, {

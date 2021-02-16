@@ -1,10 +1,10 @@
 import { Turbo } from "@hotwired/turbo-rails";
-import { createApp } from '@shopify/app-bridge';
 import { getSessionToken } from "@shopify/app-bridge-utils";
 
 document.addEventListener('DOMContentLoaded', () => {
-  const data = document.getElementById('shopify-app-init').dataset;
-
+  var data = document.getElementById('shopify-app-init').dataset;
+  var AppBridge = window['app-bridge'];
+  var createApp = AppBridge.default;
   window.app = createApp({
     apiKey: data.apiKey,
     shopOrigin: data.shopOrigin,
