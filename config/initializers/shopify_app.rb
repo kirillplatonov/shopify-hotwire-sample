@@ -19,5 +19,32 @@ ShopifyApp.configure do |config|
   end
 end
 
+# Expose JWT expire time
+module ShopifyApp
+  class JWT
+    def expire_at
+      @payload['exp'].to_i if @payload && @payload['exp']
+    end
+  end
+
+  class JWTMiddleware
+    def set_env_variables(token, env)
+      jwt = ShopifyApp::JWT.new(token)
+
+      env['jwt.shopify_domain'] = jwt.shopify_domain
+      env['jwt.shopify_user_id'] = jwt.shopify_user_id
+      env['jwt.expire_at'] = jwt.expire_at
+    end
+  end
+
+  module LoginProtection
+    def jwt_expire_at
+      expire_at = request.env['jwt.expire_at']
+      return unless expire_at
+      expire_at - 5.seconds # start fetching new token bit earlier
+    end
+  end
+end
+
 # ShopifyApp::Utils.fetch_known_api_versions                        # Uncomment to fetch known api versions from shopify servers on boot
 # ShopifyAPI::ApiVersion.version_lookup_mode = :raise_on_unknown    # Uncomment to raise an error if attempting to use an api version that was not previously known

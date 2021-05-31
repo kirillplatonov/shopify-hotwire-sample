@@ -17,13 +17,11 @@
 
     <%= render 'layouts/flash_messages' %>
 
-    <script src="https://unpkg.com/@shopify/app-bridge"></script>
-
     <%= content_tag(:div, nil, id: 'shopify-app-init', data: {
       api_key: ShopifyApp.configuration.api_key,
       shop_origin: @shop_origin || (@current_shopify_session.domain if @current_shopify_session),
       load_path: params[:return_to] || home_path,
-      debug: Rails.env.development?
+      jwt_expire_at: (jwt_expire_at if @current_shopify_session),
     } ) %>
 
     <% if content_for?(:javascript) %>
