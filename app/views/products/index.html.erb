@@ -1,0 +1,9 @@
+<%= link_to 'Back', home_path(shop: @shop_origin) %>
+
+<h2>Products</h2>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= product.title %></li>
+  <% end %>
+</ul>

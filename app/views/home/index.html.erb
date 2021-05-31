@@ -1,1 +1,19 @@
-Welcome to HomeController#index
+<h2>Link sample</h2>
+
+<%= link_to 'Products', products_path %>
+<br><br>
+
+<div>
+  or
+</div>
+
+<h2>Form sample</h2>
+
+<%= form_tag messages_path do %>
+  <div>
+    <%= label_tag :message, "Flash message" %><br>
+    <%= text_field_tag :message, nil, required: true %>
+  </div>
+  <br>
+  <%= submit_tag "Send" %>
+<% end %>
