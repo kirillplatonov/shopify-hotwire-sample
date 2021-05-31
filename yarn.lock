@@ -818,18 +818,6 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@hotwired/turbo-rails@7.0.0-beta.4":
-  version "7.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.0.0-beta.4.tgz#d73bf87852280b86ef64eb0604dc494fc641443f"
-  integrity sha512-vlI8nS/zWbm+ITW6HrDXCbEM/r0N6tWX+bHIWLNnn3qKyAkRJJo1jPCXLPtymPmxyH2QxnII5/giBbji6u6SKw==
-  dependencies:
-    "@hotwired/turbo" "^7.0.0-beta.3"
-    "@rails/actioncable" "^6.1.0"
-
-"@hotwired/turbo@^7.0.0-beta.3", "@hotwired/turbo@https://github.com/kirillplatonov/turbo":
-  version "7.0.0-beta.3"
-  resolved "https://github.com/kirillplatonov/turbo#9f11f628175acfc98549e3ca6ea18be8084ae85d"
-
 "@npmcli/move-file@^1.0.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@npmcli/move-file/-/move-file-1.1.1.tgz#31a3afae95308ef12f58ac147b3e33aae621241d"
@@ -838,7 +826,7 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@rails/actioncable@^6.0.0", "@rails/actioncable@^6.1.0":
+"@rails/actioncable@^6.0.0":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.1.tgz#e980b2ea1c62cae17bcddad37deb6ba88d498b63"
   integrity sha512-A8toxvSuzK/wX9uMwyV6T1EYzlqzIJNrO8XiNCSNsmKresdX2cbAjxFdMu9haaPJPjl3aC2FKRJeVCUWVtLPAQ==
@@ -7138,6 +7126,19 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
+
+turbo-edge@^7.0.0-beta.5.1:
+  version "7.0.0-beta.5.1"
+  resolved "https://registry.yarnpkg.com/turbo-edge/-/turbo-edge-7.0.0-beta.5.1.tgz#40a727da6fc49ce592db93dabcc07600ea27689f"
+  integrity sha512-EB3S9CKg5Sff1ki3LUmjubgQvV7BLQtd6w5Ev3rAtJQrx3hMkwmdKU67o+LfXx2TMzOCfuvbmiCXAKzGoBb4qA==
+
+turbo-rails-edge@^7.0.0-beta.5.1:
+  version "7.0.0-beta.5.1"
+  resolved "https://registry.yarnpkg.com/turbo-rails-edge/-/turbo-rails-edge-7.0.0-beta.5.1.tgz#ec9ffc47c90767fc844234e7cd9b76b50f0fffa6"
+  integrity sha512-xt9HUvSb9y9u4iERV3GY6n+3n38O0Z/ej7IjVxno0gJVMFkTljTWKYug8cG8e1yF0LjHpfG2X6DXNHFHGGsl1Q==
+  dependencies:
+    "@rails/actioncable" "^6.0.0"
+    turbo-edge "^7.0.0-beta.5.1"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

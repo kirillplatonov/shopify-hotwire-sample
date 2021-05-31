@@ -1,4 +1,4 @@
-import { Turbo } from "@hotwired/turbo-rails";
+import { Turbo } from "turbo-rails-edge";
 import { getSessionToken } from "@shopify/app-bridge-utils";
 
 document.addEventListener('DOMContentLoaded', () => {
