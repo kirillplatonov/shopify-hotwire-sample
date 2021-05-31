@@ -5,7 +5,7 @@ ShopifyApp.configure do |config|
                                   # https://help.shopify.com/en/api/getting-started/authentication/oauth/scopes
   config.embedded_app = true
   config.after_authenticate_job = false
-  config.api_version = "2021-01"
+  config.api_version = "2021-04"
   config.shop_session_repository = 'Shop'
   config.allow_jwt_authentication = true
   config.allow_cookie_authentication = false
