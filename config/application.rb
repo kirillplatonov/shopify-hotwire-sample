@@ -19,7 +19,7 @@ module ShopifyHotwireSample
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    # TODO: Remove when shopify_app will become compatible with Rails 6.1
-    config.action_dispatch.cookies_same_site_protection = nil
+    # Required to allow an embedded app to make cross-domain requests in the Shopify Admin.
+    config.action_dispatch.cookies_same_site_protection = :none
   end
 end

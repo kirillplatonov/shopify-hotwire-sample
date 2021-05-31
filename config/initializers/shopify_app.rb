@@ -9,6 +9,7 @@ ShopifyApp.configure do |config|
   config.shop_session_repository = 'Shop'
   config.allow_jwt_authentication = true
   config.allow_cookie_authentication = false
+  config.reauth_on_access_scope_changes = true
 
   config.api_key = ENV.fetch('SHOPIFY_API_KEY', '').presence
   config.secret = ENV.fetch('SHOPIFY_API_SECRET', '').presence

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_08_164810) do
+ActiveRecord::Schema.define(version: 2021_05_31_142437) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_164810) do
     t.string "shopify_token", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "access_scopes"
     t.index ["shopify_domain"], name: "index_shops_on_shopify_domain", unique: true
   end
 
