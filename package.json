@@ -8,7 +8,7 @@
     "@rails/request.js": "^0.0.4",
     "@rails/ujs": "^6.1.4",
     "@rails/webpacker": "^5.4.0",
-    "@shopify/app-bridge-utils": "1.30.0"
+    "@shopify/app-bridge-utils": "^2.0.3"
   },
   "version": "0.1.0",
   "devDependencies": {

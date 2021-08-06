@@ -1,4 +1,5 @@
 class SplashPageController < ApplicationController
+  include ShopifyApp::ShopHost
   include ShopifyApp::EmbeddedApp
   include ShopifyApp::RequireKnownShop
   include ShopifyApp::ShopAccessScopesVerification

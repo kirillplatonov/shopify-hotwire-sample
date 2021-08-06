@@ -8,8 +8,8 @@
 
     <title><%= content_for(:title) %></title>
 
-    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application' %>
+    <%= javascript_pack_tag 'application' %>
   </head>
 
   <body>
@@ -20,6 +20,7 @@
     <%= content_tag(:div, nil, id: 'shopify-app-init', data: {
       api_key: ShopifyApp.configuration.api_key,
       shop_origin: @shop_origin || (@current_shopify_session.domain if @current_shopify_session),
+      host: @host,
       load_path: params[:return_to] || home_path,
       jwt_expire_at: (jwt_expire_at if @current_shopify_session),
     } ) %>

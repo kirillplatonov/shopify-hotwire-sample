@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.app = createApp({
     apiKey: data.apiKey,
-    shopOrigin: data.shopOrigin,
+    host: data.host,
     forceRedirect: true,
   });
 
