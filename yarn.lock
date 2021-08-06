@@ -973,6 +973,19 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@hotwired/turbo-rails@^7.0.0-rc.1":
+  version "7.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo-rails/-/turbo-rails-7.0.0-rc.1.tgz#68cc07b2a1e7d9b29240c525c657722b3f0c3842"
+  integrity sha512-LLOgtHWb/cnz0bXlfJ9khWHapQuCOuUI48yiSVgL3veklvbX1vyQlk/ALn35Z6nHTi7Bf+MHMS9H5W2c/vwKuw==
+  dependencies:
+    "@hotwired/turbo" "^7.0.0-rc.1"
+    "@rails/actioncable" "^6.0.0"
+
+"@hotwired/turbo@^7.0.0-rc.1":
+  version "7.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.0.0-rc.1.tgz#a5c1be86def1cc39b3011c935c5734b8632af5c3"
+  integrity sha512-niNA68ku4TZYbV3biwTPf1L5CidP50S2xfeb5rGQfodvPB9UAtkqKFFRIA0LL8y0DG4MGIZ/QFlbvlmFea5p4w==
+
 "@npmcli/move-file@^1.0.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@npmcli/move-file/-/move-file-1.1.1.tgz#31a3afae95308ef12f58ac147b3e33aae621241d"
@@ -981,12 +994,7 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@rails/actioncable@^6.0.0":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.1.tgz#e980b2ea1c62cae17bcddad37deb6ba88d498b63"
-  integrity sha512-A8toxvSuzK/wX9uMwyV6T1EYzlqzIJNrO8XiNCSNsmKresdX2cbAjxFdMu9haaPJPjl3aC2FKRJeVCUWVtLPAQ==
-
-"@rails/actioncable@^6.1.4":
+"@rails/actioncable@^6.0.0", "@rails/actioncable@^6.1.4":
   version "6.1.4"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.1.4.tgz#c3c5a9f8302c429af9722b6c50ab48049016d2a3"
   integrity sha512-0LmSKJTuo2dL6BQ+9xxLnS9lbkyfz2mBGeBnQ2J7o9Bn0l0q+ZC6VuoZMZZXPvABI4QT7Nfknv5WhfKYL+boew==
@@ -6612,19 +6620,6 @@ tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
   integrity sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY=
-
-turbo-edge@^7.0.0-beta.5.1:
-  version "7.0.0-beta.5.1"
-  resolved "https://registry.yarnpkg.com/turbo-edge/-/turbo-edge-7.0.0-beta.5.1.tgz#40a727da6fc49ce592db93dabcc07600ea27689f"
-  integrity sha512-EB3S9CKg5Sff1ki3LUmjubgQvV7BLQtd6w5Ev3rAtJQrx3hMkwmdKU67o+LfXx2TMzOCfuvbmiCXAKzGoBb4qA==
-
-turbo-rails-edge@^7.0.0-beta.5.1:
-  version "7.0.0-beta.5.1"
-  resolved "https://registry.yarnpkg.com/turbo-rails-edge/-/turbo-rails-edge-7.0.0-beta.5.1.tgz#ec9ffc47c90767fc844234e7cd9b76b50f0fffa6"
-  integrity sha512-xt9HUvSb9y9u4iERV3GY6n+3n38O0Z/ej7IjVxno0gJVMFkTljTWKYug8cG8e1yF0LjHpfG2X6DXNHFHGGsl1Q==
-  dependencies:
-    "@rails/actioncable" "^6.0.0"
-    turbo-edge "^7.0.0-beta.5.1"
 
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"

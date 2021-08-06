@@ -1,4 +1,4 @@
-import { Turbo } from "turbo-rails-edge"
+import { Turbo } from "@hotwired/turbo-rails"
 import Rails from "@rails/ujs"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"

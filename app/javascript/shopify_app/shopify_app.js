@@ -1,4 +1,4 @@
-import { Turbo } from "turbo-rails-edge";
+import { Turbo } from "@hotwired/turbo-rails";
 import { getSessionToken } from "@shopify/app-bridge-utils";
 import createApp from '@shopify/app-bridge';
 
@@ -10,13 +10,18 @@ document.addEventListener('DOMContentLoaded', () => {
   window.app = createApp({
     apiKey: data.apiKey,
     shopOrigin: data.shopOrigin,
+    forceRedirect: true,
   });
 
-  // Intercept every Turbo request and load Shopify session token
-  Turbo.setRequestInterceptor(async (request) => {
+  // Append Shopify's JWT to every Turbo request
+  document.addEventListener('turbo:before-fetch-request', async (event) => {
+    event.preventDefault()
+
     window.sessionToken = await retrieveToken();
-    request.addHeader("Authorization", `Bearer ${window.sessionToken}`);
-  });
+    event.detail.fetchOptions.headers['Authorization'] = `Bearer ${window.sessionToken}`
+
+    event.detail.resume()
+  })
 
   // Redirect to the requested page
   Turbo.visit(data.loadPath);
@@ -52,7 +57,7 @@ document.addEventListener("turbo:before-fetch-response", (event) => {
   const status = response.statusCode;
   const location = response.header("Location");
 
-  if (status === 300 && location !== null) {
+  if (status === 200 && location !== null) {
     event.preventDefault();
     Turbo.visit(location);
   }

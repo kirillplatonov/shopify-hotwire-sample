@@ -14,7 +14,7 @@ gem 'shopify_app', '~> 17.2.1'
 
 # frontend
 gem 'webpacker', '~> 5.0'
-gem 'turbo-rails', '~> 0.5.7'
+gem 'turbo-rails', '~> 0.6.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
