@@ -4,17 +4,13 @@
 
 To run this app locally, you can clone this repository and do the following.
 
-1. Create `.env` file with `API key` and `API secret key` app credentials that can be found in the Shopify Partners dashboard.
+1. Connect to Shopify:
+
 ```
-SHOPIFY_API_KEY=<The API key app credential specified in the Shopify Partners dashboard>
-SHOPIFY_API_SECRET=<The API secret key app credential specified in the Shopify Partners dashboard>
-```
-Alternatively you can run this command to generate `.env` file.
-```
-shopify connect
+shopify rails connect
 ```
 
-2. Install dependencies and prepare DB:
+2. Setup Rails app:
 ```
 bin/setup
 ```
