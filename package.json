@@ -2,9 +2,9 @@
   "name": "shopify-hotwire-sample",
   "private": true,
   "dependencies": {
-    "@rails/actioncable": "^6.0.3-7",
-    "@rails/activestorage": "^6.0.3-7",
-    "@rails/ujs": "^6.0.3-7",
+    "@rails/actioncable": "^6.1.4",
+    "@rails/activestorage": "^6.1.4",
+    "@rails/ujs": "^6.1.4",
     "@rails/webpacker": "^5.4.0",
     "@shopify/app-bridge-utils": "1.30.0",
     "turbo-rails-edge": "^7.0.0-beta.5.1"
