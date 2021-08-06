@@ -1006,6 +1006,11 @@
   dependencies:
     spark-md5 "^3.0.0"
 
+"@rails/request.js@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@rails/request.js/-/request.js-0.0.4.tgz#3d35f6ed2ec6f32057cd53c5b75c2e4b7455ea2b"
+  integrity sha512-hOSnvj6HIHzL74A6LmmQ5D907CJSUMlowv6WW7x7DyGIeGltHLC+KLy2olcpg0C1rNX/VXbKbhNH6maQN9eiPg==
+
 "@rails/ujs@^6.1.4":
   version "6.1.4"
   resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.1.4.tgz#093d5341595a02089ed309dec40f3c37da7b1b10"
