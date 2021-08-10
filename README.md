@@ -4,8 +4,11 @@ The sample app includes:
 - JWT integration for [Hotwire Turbo](https://turbo.hotwired.dev/)
 - JWT integration for [Rails Request.JS](https://github.com/rails/request.js)
 - App Bridge 2.0
+- [Polaris ViewComponents](https://github.com/baoagency/polaris_view_components)
 
 Since the `shopify_app` gem is not fully compatible with App Bridge 2 this sample uses fork.
+
+![Shopify Hotwire Sample](.github/assets/preview.png)
 
 > The old App Bridge 1 sample can be found in `app-bridge-1` branch.
 

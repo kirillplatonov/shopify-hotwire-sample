@@ -8,12 +8,19 @@
 
     <title><%= content_for(:title) %></title>
 
+    <%= stylesheet_link_tag 'polaris_view_components' %>
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="<%= polaris_body_styles %>">
+    <div class="app-wrapper">
+      <div class="app-content">
+        <main role="main">
+          <%= yield %>
+        </main>
+      </div>
+    </div>
 
     <%= render 'layouts/flash_messages' %>
 

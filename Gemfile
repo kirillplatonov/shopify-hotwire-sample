@@ -10,7 +10,10 @@ gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.7.5', require: false
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails', '~> 2.7'
+
+# shopify
 gem 'shopify_app', github: 'kirillplatonov/shopify_app'
+gem 'polaris_view_components'
 
 # frontend
 gem 'webpacker', '~> 5.0'

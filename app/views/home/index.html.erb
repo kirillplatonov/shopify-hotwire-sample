@@ -1,19 +1,18 @@
-<h2>Link sample</h2>
+<%= polaris_page(title: "Home") do %>
+  <%= polaris_card(title: "Button sample") do %>
+    <%= polaris_button(url: products_path) { "Products" } %>
+  <% end %>
 
-<%= link_to 'Products', products_path %>
-<br><br>
-
-<div>
-  or
-</div>
-
-<h2>Form sample</h2>
-
-<%= form_tag messages_path do %>
-  <div>
-    <%= label_tag :message, "Flash message" %><br>
-    <%= text_field_tag :message, nil, required: true %>
-  </div>
-  <br>
-  <%= submit_tag "Send" %>
+  <%= polaris_card(title: "Form sample") do %>
+    <%= form_tag messages_path do %>
+      <%= polaris_form_layout do |form_layout| %>
+        <% form_layout.item do %>
+          <%= polaris_text_field(name: :message, label: "Flash message") %>
+        <% end %>
+        <% form_layout.item do %>
+          <%= polaris_button(primary: true, submit: true) { "Send" } %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
 <% end %>
