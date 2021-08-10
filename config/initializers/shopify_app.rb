@@ -8,7 +8,7 @@ ShopifyApp.configure do |config|
   config.api_version = "2021-07"
   config.shop_session_repository = 'Shop'
   config.allow_jwt_authentication = true
-  config.allow_cookie_authentication = false
+  config.allow_cookie_authentication = !Rails.configuration.force_iframe
   config.reauth_on_access_scope_changes = true
 
   config.api_key = ENV.fetch('SHOPIFY_API_KEY', '').presence

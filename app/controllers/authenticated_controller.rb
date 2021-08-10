@@ -5,6 +5,8 @@ class AuthenticatedController < ApplicationController
   include ShopifyApp::EnsureAuthenticatedLinks
   include ShopifyApp::Authenticated
 
+  skip_before_action :redirect_to_splash_page, unless: -> { Rails.configuration.force_iframe }
+
   before_action :set_shop_origin
 
   helper_method :current_shop, :jwt_expire_at

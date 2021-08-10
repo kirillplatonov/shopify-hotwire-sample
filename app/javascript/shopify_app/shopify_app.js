@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const shopifyAppInit = document.getElementById('shopify-app-init')
   if (!shopifyAppInit) { return }
   var data = shopifyAppInit.dataset;
+  if (data.forceIframe === "false") { return }
 
   window.app = createApp({
     apiKey: data.apiKey,

@@ -30,6 +30,7 @@
       host: @host,
       load_path: params[:return_to] || home_path,
       jwt_expire_at: (jwt_expire_at if @current_shopify_session),
+      force_iframe: Rails.configuration.force_iframe.to_s,
     } ) %>
 
     <% if content_for?(:javascript) %>
