@@ -76,5 +76,5 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # App config
-  config.force_iframe = (ENV["DISABLE_IFRAME"] == "1") ? false : true
+  config.force_iframe = !(ENV["DISABLE_IFRAME"] == "1")
 end
