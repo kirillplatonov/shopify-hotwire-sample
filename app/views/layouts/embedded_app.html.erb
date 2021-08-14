@@ -14,6 +14,8 @@
   </head>
 
   <body style="<%= polaris_body_styles %>">
+    <%= render 'layouts/flash_messages' %>
+
     <div class="app-wrapper">
       <div class="app-content">
         <main role="main">
@@ -21,8 +23,6 @@
         </main>
       </div>
     </div>
-
-    <%= render 'layouts/flash_messages' %>
 
     <%= content_tag(:div, nil, id: 'shopify-app-init', data: {
       api_key: ShopifyApp.configuration.api_key,
