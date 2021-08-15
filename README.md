@@ -81,3 +81,4 @@ NGROK_WEBPACK_TUNNEL=hotwire-webpack.eu.ngrok.io
 ```bash
 foreman start -f Procfile.dev
 ```
+<img width="1680" alt="image" src="https://user-images.githubusercontent.com/7152041/129482668-2eae432b-ac1d-45ef-b746-f50e4d15568e.png">
