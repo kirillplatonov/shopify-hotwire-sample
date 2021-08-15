@@ -10,6 +10,7 @@
     "@rails/webpacker": "^5.4.0",
     "@shopify/app-bridge-utils": "^2.0.3",
     "@shopify/polaris": "^6.6.0",
+    "dotenv": "^10.0.0",
     "polaris-view-components": "^0.1.0",
     "stimulus": "^2.0.0"
   },
