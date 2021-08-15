@@ -41,12 +41,7 @@ rails s
 
 #### Optional
 
-6. Install foreman
-```bash
-gem install foreman
-```
-
-7. Add an ngrok configuration
+6. Add an ngrok configuration
    
 **~/.ngrok2/ngrok.yml**
 
@@ -68,7 +63,7 @@ tunnels:
     host-header: localhost:3035
 ```
 
-8. Add `NGROK_WEBPACK_TUNNEL` to your `.env` file
+7. Add `NGROK_WEBPACK_TUNNEL` to your `.env` file
 ```bash
 SHOPIFY_API_KEY=foo
 SHOPIFY_API_SECRET=bar
@@ -77,7 +72,7 @@ SHOPIFY_API_SECRET=bar
 NGROK_WEBPACK_TUNNEL=hotwire-webpack.eu.ngrok.io
 ```
 
-9. Use foreman to run the Rails server & Webpack at the same time
+8. Use foreman to run the Rails server & Webpack at the same time
 ```bash
 foreman start -f Procfile.dev
 ```
