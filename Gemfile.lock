@@ -125,6 +125,7 @@ GEM
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
     ffi (1.15.3)
+    foreman (0.87.2)
     globalid (0.5.2)
       activesupport (>= 5.0)
     graphql (1.12.14)
@@ -279,6 +280,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   dotenv-rails (~> 2.7)
+  foreman (~> 0.87.2)
   listen (~> 3.5)
   pg (~> 1.1)
   polaris_view_components
