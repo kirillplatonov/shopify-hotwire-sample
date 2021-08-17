@@ -11,3 +11,33 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+class ActionDispatch::IntegrationTest
+  teardown do
+    clear_login
+  end
+
+  def login(shop)
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.add_mock(:shopify,
+      provider: 'shopify',
+      uid: shop.shopify_domain,
+      credentials: { token: shop.shopify_token },
+    )
+
+    Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:shopify]
+    Rails.application.env_config['omniauth.params'] = { shop: shop.shopify_domain }
+    Rails.application.env_config['jwt.shopify_domain'] = shop.shopify_domain
+
+    Shop.any_instance.stubs(:sync_shopify_data).returns(true)
+
+    post "/auth/shopify"
+    follow_redirect!
+  end
+
+  def clear_login
+    Rails.application.env_config.delete('omniauth.auth')
+    Rails.application.env_config.delete('omniauth.params')
+    Rails.application.env_config.delete('jwt.shopify_domain')
+  end
+end
