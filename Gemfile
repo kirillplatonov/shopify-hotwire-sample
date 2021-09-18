@@ -6,6 +6,7 @@ ruby '3.0.2'
 # backend
 gem 'rails', '~> 6.1.4'
 gem 'pg', '~> 1.1'
+gem 'redis'
 gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.7.5', require: false
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -18,6 +19,7 @@ gem 'polaris_view_components'
 # frontend
 gem 'webpacker', '~> 5.0'
 gem 'turbo-rails', '~> 0.7.0'
+gem 'hotwire-livereload'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

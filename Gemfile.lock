@@ -133,6 +133,9 @@ GEM
       activesupport (>= 3.0)
       graphql (~> 1.10)
     hashie (4.1.0)
+    hotwire-livereload (0.1.4)
+      listen (>= 3.0.0)
+      rails (>= 6.0.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jwt (2.2.3)
@@ -223,6 +226,7 @@ GEM
       ffi (~> 1.0)
     redirect_safely (1.0.0)
       activemodel
+    redis (4.4.0)
     regexp_parser (2.1.1)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -281,11 +285,13 @@ DEPENDENCIES
   capybara (>= 3.26)
   dotenv-rails (~> 2.7)
   foreman (~> 0.87.2)
+  hotwire-livereload
   listen (~> 3.5)
   pg (~> 1.1)
   polaris_view_components
   puma (~> 5.0)
   rails (~> 6.1.4)
+  redis
   selenium-webdriver
   shopify_app!
   spring

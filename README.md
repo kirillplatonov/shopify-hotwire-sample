@@ -5,6 +5,7 @@ The sample app includes:
 - JWT integration for [Rails Request.JS](https://github.com/rails/request.js)
 - App Bridge 2.0
 - [Polaris ViewComponents](https://github.com/baoagency/polaris_view_components)
+- [Hotwire::Livereload](https://github.com/kirillplatonov/hotwire-livereload)
 
 Since the `shopify_app` gem is not fully compatible with App Bridge 2 this sample uses fork.
 
@@ -42,7 +43,7 @@ rails s
 #### Optional
 
 6. Add an ngrok configuration
-   
+
 **~/.ngrok2/ngrok.yml**
 
 ```yaml
