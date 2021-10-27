@@ -11,8 +11,8 @@ document.addEventListener("turbo:load", (event) => {
     flashNotice(flashData.notice);
   }
 
-  if (flashData.error) {
-    flashError(flashData.error);
+  if (flashData.alert) {
+    flashError(flashData.alert);
   }
 });
 
