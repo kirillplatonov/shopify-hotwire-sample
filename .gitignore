@@ -37,3 +37,6 @@ yarn-debug.log*
 
 # Ignore file with Shopify API keys
 .env
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

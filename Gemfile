@@ -17,7 +17,7 @@ gem 'shopify_app', github: 'kirillplatonov/shopify_app'
 gem 'polaris_view_components', '~> 0.5.0'
 
 # frontend
-gem 'webpacker', '~> 5.0'
+gem 'jsbundling-rails'
 gem 'turbo-rails', '~> 7.1'
 gem 'stimulus-rails'
 gem 'hotwire-livereload'

@@ -1,4 +1,4 @@
-require('./shopify_app')
-require('./request')
-require('./flash_messages')
-require('./url_updater')
+import "./flash_messages"
+import "./request"
+import "./shopify_app"
+import "./url_updater"

@@ -8,9 +8,8 @@
 
     <title><%= content_for(:title) %></title>
 
-    <%= stylesheet_link_tag 'polaris_view_components' %>
-    <%= stylesheet_pack_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_link_tag 'polaris_view_components', 'application' %>
+    <%= javascript_include_tag 'application' %>
     <%= hotwire_livereload_tags %>
   </head>
 
