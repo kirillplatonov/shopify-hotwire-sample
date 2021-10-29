@@ -1,4 +1,5 @@
 require_relative "boot"
+require_relative "../app/middleware/app_bridge_middleware"
 
 require "rails/all"
 
@@ -21,5 +22,8 @@ module ShopifyHotwireSample
 
     # Required to allow an embedded app to make cross-domain requests in the Shopify Admin.
     config.action_dispatch.cookies_same_site_protection = :none
+
+    # App Bridge
+    config.middleware.use AppBridgeMiddleware
   end
 end
