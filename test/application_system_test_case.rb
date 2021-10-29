@@ -20,8 +20,6 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     Rails.application.env_config['omniauth.params'] = { shop: shop.shopify_domain }
     Rails.application.env_config['jwt.shopify_domain'] = shop.shopify_domain
 
-    Shop.any_instance.stubs(:sync_shopify_data).returns(true)
-
     visit "/auth/shopify"
   end
 
