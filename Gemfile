@@ -19,6 +19,7 @@ gem 'polaris_view_components', '~> 0.5.0'
 # frontend
 gem 'webpacker', '~> 5.0'
 gem 'turbo-rails', '~> 7.1'
+gem 'stimulus-rails'
 gem 'hotwire-livereload'
 
 group :development, :test do

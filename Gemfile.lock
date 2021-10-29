@@ -250,6 +250,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    stimulus-rails (0.7.1)
+      rails (>= 6.0.0)
     thor (1.1.0)
     turbo-rails (7.1.1)
       rails (>= 6.0.0)
@@ -298,6 +300,7 @@ DEPENDENCIES
   redis
   selenium-webdriver
   shopify_app!
+  stimulus-rails
   turbo-rails (~> 7.1)
   tzinfo-data
   web-console (>= 4.1.0)
