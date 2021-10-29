@@ -18,5 +18,3 @@ Rails.delegate(document, Rails.formSubmitSelector, "turbo:before-cache", Rails.e
 
 import "shopify_app"
 import "controllers"
-
-import "@shopify/polaris/dist/styles.css"
