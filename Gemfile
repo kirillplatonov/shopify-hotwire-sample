@@ -14,7 +14,7 @@ gem 'dotenv-rails', '~> 2.7'
 
 # shopify
 gem 'shopify_app', github: 'kirillplatonov/shopify_app'
-gem 'polaris_view_components'
+gem 'polaris_view_components', '~> 0.5.0'
 
 # frontend
 gem 'webpacker', '~> 5.0'

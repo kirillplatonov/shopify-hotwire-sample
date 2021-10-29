@@ -147,18 +147,18 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    marcel (1.0.1)
+    marcel (1.0.2)
     method_source (1.0.0)
-    mini_mime (1.1.1)
+    mini_mime (1.1.2)
     minitest (5.14.4)
     msgpack (1.4.2)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     nio4r (2.5.8)
-    nokogiri (1.12.4-arm64-darwin)
+    nokogiri (1.12.5-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.12.4-x86_64-darwin)
+    nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
     oauth2 (1.4.7)
       faraday (>= 0.8, < 2.0)
@@ -180,13 +180,13 @@ GEM
       activesupport
       omniauth-oauth2 (~> 1.5)
     pg (1.2.3)
-    polaris_view_components (0.2.0)
-      rails (>= 5.0.0, < 7.0.0)
+    polaris_view_components (0.5.0)
+      rails (>= 5.0.0, < 8.0.0)
       view_component (~> 2.0, >= 2.0.0)
     public_suffix (4.0.6)
     puma (5.4.0)
       nio4r (~> 2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -250,7 +250,7 @@ GEM
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    view_component (2.40.0)
+    view_component (2.42.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     web-console (4.1.0)
@@ -272,7 +272,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.4.2)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   arm64-darwin-20
@@ -287,7 +287,7 @@ DEPENDENCIES
   hotwire-livereload
   listen (~> 3.5)
   pg (~> 1.1)
-  polaris_view_components
+  polaris_view_components (~> 0.5.0)
   puma (~> 5.0)
   rails (~> 6.1.4)
   redis
@@ -303,4 +303,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.25
+   2.2.30
