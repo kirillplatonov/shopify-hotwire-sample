@@ -32,11 +32,5 @@
       jwt_expire_at: (jwt_expire_at if @current_shopify_session),
       force_iframe: Rails.configuration.force_iframe.to_s,
     } ) %>
-
-    <% if content_for?(:javascript) %>
-      <div id="ContentForJavascript">
-        <%= yield :javascript %>
-      </div>
-    <% end %>
   </body>
 </html>
