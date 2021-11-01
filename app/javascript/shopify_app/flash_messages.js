@@ -1,20 +1,4 @@
-import { Toast } from '@shopify/app-bridge/actions';
-
-document.addEventListener("turbo:load", (event) => {
-  if (!window.app) { return }
-
-  const shopifyAppFlash = document.getElementById('shopify-app-flash')
-  if (!shopifyAppFlash) { return }
-  const flashData = JSON.parse(shopifyAppFlash.dataset.flash);
-
-  if (flashData.notice) {
-    flashNotice(flashData.notice);
-  }
-
-  if (flashData.alert) {
-    flashError(flashData.alert);
-  }
-});
+import { Toast } from "@shopify/app-bridge/actions";
 
 export function flashNotice(message) {
   Toast.create(window.app, {
