@@ -1,6 +1,9 @@
-<% content_for :javascript do %>
-  <%= content_tag(:div, nil, id: 'shopify-app-flash', data: { flash: { notice: flash[:notice], alert: flash[:alert] } }) %>
-<% end %>
+<%= content_tag(:div, nil, id: 'shopify-app-flash', data: {
+  controller: "flash",
+  flash: {
+    notice: (flash.now[:notice].presence || flash[:notice]),
+    error: (flash.now[:error].presence || flash[:error]), } }
+  ) %>
 
 <% unless Rails.configuration.force_iframe %>
   <% if notice %>
