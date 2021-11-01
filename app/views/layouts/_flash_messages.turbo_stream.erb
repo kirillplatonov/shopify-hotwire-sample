@@ -1,5 +1,1 @@
-<turbo-stream action="replace" target="shopify-app-flash">
-  <template>
-    <%= render partial: "layouts/flash_messages.html.erb" %>
-  </template>
-</turbo-stream>
+<%= turbo_stream.replace("shopify-app-flash", partial: "layouts/flash_messages.html.erb") %>

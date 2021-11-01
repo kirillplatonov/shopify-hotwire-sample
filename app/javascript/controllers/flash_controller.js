@@ -12,8 +12,8 @@ export default class extends Controller {
       flashNotice(flashData.notice);
     }
 
-    if (flashData.error) {
-      flashError(flashData.error);
+    if (flashData.alert) {
+      flashError(flashData.alert);
     }
   }
 }

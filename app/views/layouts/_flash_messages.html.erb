@@ -2,8 +2,9 @@
   controller: "flash",
   flash: {
     notice: (flash.now[:notice].presence || flash[:notice]),
-    error: (flash.now[:error].presence || flash[:error]), } }
-  ) %>
+    alert: (flash.now[:alert].presence || flash[:alert]),
+  },
+}) %>
 
 <% unless Rails.configuration.force_iframe %>
   <% if notice %>
