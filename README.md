@@ -1,6 +1,7 @@
 # Shopify Hotwire Sample
 
 The sample app includes:
+
 - JWT integration for [Hotwire Turbo](https://turbo.hotwired.dev/)
 - JWT integration for [Rails Request.JS](https://github.com/rails/request.js)
 - App Bridge 2.0
@@ -23,26 +24,35 @@ shopify rails connect
 ```
 
 2. Setup Rails app:
+
 ```
 bin/setup
 ```
 
 3. Run `ngrok` on port 3000:
+
 ```
 ngrok http 3000
 ```
 
 4. Start the app:
+
 ```
 rails s
 ```
 
-5. Install and open this app on a development shop.
+5. Use ngrok's URL insead of `localhost:3000` for your local development, for example:
+
+```
+https://abcd1-32-32-44-00.ngrok.io
+```
+
+6. Install and open this app on a development shop.
 
 #### Optional
 
-6. Add an ngrok configuration
-   
+7. Add an ngrok configuration
+
 **~/.ngrok2/ngrok.yml**
 
 ```yaml
@@ -63,7 +73,8 @@ tunnels:
     host-header: localhost:3035
 ```
 
-7. Add `NGROK_WEBPACK_TUNNEL` to your `.env` file
+8. Add `NGROK_WEBPACK_TUNNEL` to your `.env` file
+
 ```bash
 SHOPIFY_API_KEY=foo
 SHOPIFY_API_SECRET=bar
@@ -72,8 +83,10 @@ SHOPIFY_API_SECRET=bar
 NGROK_WEBPACK_TUNNEL=hotwire-webpack.eu.ngrok.io
 ```
 
-8. Use foreman to run the Rails server & Webpack at the same time
+9. Use foreman to run the Rails server & Webpack at the same time
+
 ```bash
 foreman start -f Procfile.dev
 ```
+
 <img width="1680" alt="image" src="https://user-images.githubusercontent.com/7152041/129482668-2eae432b-ac1d-45ef-b746-f50e4d15568e.png">
