@@ -2,3 +2,6 @@
 // Run that command whenever you add a new controller
 
 import { application } from "./application"
+
+import FlashController from "./flash_controller.js"
+application.register("flash", FlashController)
