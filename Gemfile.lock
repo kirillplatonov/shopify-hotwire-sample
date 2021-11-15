@@ -296,7 +296,7 @@ DEPENDENCIES
   selenium-webdriver
   shopify_app!
   stimulus-rails
-  turbo-rails (~> 7.1)
+  turbo-rails (~> 0.7.1)
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
