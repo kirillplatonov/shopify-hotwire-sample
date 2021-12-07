@@ -8,7 +8,7 @@ gem 'rails', '~> 6.1.4'
 gem 'pg', '~> 1.1'
 gem 'redis'
 gem 'puma', '~> 5.0'
-gem 'bootsnap', '>= 1.7.5', require: false
+gem 'bootsnap', '>= 1.9.3', require: false
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails', '~> 2.7'
 
