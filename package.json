@@ -2,7 +2,7 @@
   "name": "shopify-hotwire-sample",
   "private": true,
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",

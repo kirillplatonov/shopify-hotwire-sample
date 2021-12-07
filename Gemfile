@@ -14,11 +14,11 @@ gem 'dotenv-rails', '~> 2.7'
 
 # shopify
 gem 'shopify_app', github: 'kirillplatonov/shopify_app'
-gem 'polaris_view_components', '~> 0.5.0'
+gem 'polaris_view_components', '~> 0.6.0'
 
 # frontend
 gem 'jsbundling-rails'
-gem 'turbo-rails', '~> 0.7.1'
+gem 'turbo-rails'
 gem 'stimulus-rails'
 gem 'hotwire-livereload'
 
