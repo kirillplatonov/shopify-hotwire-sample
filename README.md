@@ -20,8 +20,10 @@ To run this app locally, you can clone this repository and do the following.
 1. Connect to Shopify:
 
 ```
-shopify rails connect
+shopify app connect
 ```
+
+It will generate `.env` file with Shopify API credentials.
 
 2. Setup Rails app:
 ```
