@@ -14,7 +14,7 @@ gem 'dotenv-rails', '~> 2.7'
 
 # shopify
 gem 'shopify_app', github: 'kirillplatonov/shopify_app'
-gem 'polaris_view_components', '~> 0.6.0'
+gem 'polaris_view_components', '~> 0.7.0'
 
 # frontend
 gem 'jsbundling-rails'
@@ -28,7 +28,6 @@ end
 
 group :development do
   gem 'web-console', '>= 4.1.0'
-  gem 'foreman', '~> 0.87.2'
 end
 
 group :test do

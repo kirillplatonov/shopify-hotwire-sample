@@ -7,11 +7,11 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
     "@hotwired/turbo-rails": "^7.0.1",
-    "@rails/request.js": "^0.0.5",
+    "@rails/request.js": "^0.0.6",
     "@shopify/app-bridge-utils": "^2.0.5",
     "dotenv": "^10.0.0",
-    "esbuild": "^0.13.10",
-    "polaris-view-components": "^0.5.0"
+    "esbuild": "^0.14.10",
+    "polaris-view-components": "^0.7.0"
   },
   "version": "0.1.0",
   "devDependencies": {}
