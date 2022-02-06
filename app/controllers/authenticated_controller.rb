@@ -27,4 +27,13 @@ class AuthenticatedController < ApplicationController
     def turbo_flashes
       turbo_stream.replace("shopify-app-flash", partial: "layouts/flash_messages.html.erb")
     end
+
+    # Original method in ShopifyApp::LoginProtection
+    def fullpage_redirect_to(url)
+      if ShopifyApp.configuration.embedded_app?
+        render "shared/redirect", status: 303, locals: { url: url }
+      else
+        redirect_to(url)
+      end
+    end
 end
