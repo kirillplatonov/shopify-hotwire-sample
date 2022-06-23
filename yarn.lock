@@ -30,17 +30,17 @@
   resolved "https://registry.yarnpkg.com/@rails/request.js/-/request.js-0.0.6.tgz#5f0347a9f363e50ec45118c7134080490cda81d8"
   integrity sha512-dfFWaQXitYJ4kxrgGJNhDNXX54/v10YgoJqBMVe6lhqs6a4N9WD7goZJEvwin82TtK8MqUNhwfyisgKwM6dMdg==
 
-"@shopify/app-bridge-utils@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-2.0.5.tgz#76dc111b28ffa30741484ad69fc9d44086c714dc"
-  integrity sha512-8ngtB1+mUsn2Netrk/Qmy95F7fPjuAHQNPYa0CC5qZ21n66pIE4DN6ykOx8KcOsz8XWoQd8SPnrhU2CWFT9nPw==
+"@shopify/app-bridge-utils@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-3.1.1.tgz#cee566f983b60f96a848998a3ad3b0ba5c7bc4e3"
+  integrity sha512-le1/A62naIj5yq2o/G8htECvYTiAbVzOo9Ue3/gGqlJJC6w7+Uu4ppDHdkg6yfZCmkPUXCIr7+yU3kZHYV5z0g==
   dependencies:
-    "@shopify/app-bridge" "^2.0.5"
+    "@shopify/app-bridge" "^3.1.1"
 
-"@shopify/app-bridge@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-2.0.5.tgz#d669c7a7f008f013457785095268ca6807420d33"
-  integrity sha512-aRQzy+MNRBtxdTcQwG7e2s6tB5UK1T+AiqXvks4x0kOG0TnwOwPpx0JVrY5dipXEEQ3XJkIDTiH6+Kp6LBvHSw==
+"@shopify/app-bridge@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-3.1.1.tgz#40106efb23edf3b209da7f8aae37759e023561ad"
+  integrity sha512-RyjKDFfdytcDu3hcHIjBXvpXKDKMlsvpWshuE5lv5H4WEF+7IQomxmmJSXOJJIYnXv3COIamUml3WP/qVMak5A==
   dependencies:
     base64url "^3.0.1"
 

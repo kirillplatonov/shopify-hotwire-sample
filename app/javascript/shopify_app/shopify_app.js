@@ -1,6 +1,7 @@
 import { Turbo } from "@hotwired/turbo-rails";
 import { getSessionToken } from "@shopify/app-bridge-utils";
 import createApp from '@shopify/app-bridge';
+import { setupRedirectHandler } from './navigation'
 
 document.addEventListener('DOMContentLoaded', () => {
   const shopifyAppInit = document.getElementById('shopify-app-init')
@@ -38,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       window.jwtExpireAt = jwtExpireAt * 1000;
     }
   });
+
+  setupRedirectHandler()
 });
 
 export async function retrieveToken() {
