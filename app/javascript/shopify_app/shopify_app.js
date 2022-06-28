@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // Redirect to the requested page
-  Turbo.visit(data.loadPath);
+  Turbo.visit(data.loadPath, { action: "replace" });
 
   document.addEventListener("turbo:load", () => {
     const shopifyAppInit = document.getElementById('shopify-app-init')
