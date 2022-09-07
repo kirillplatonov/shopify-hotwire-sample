@@ -8,15 +8,15 @@
 
     <title><%= content_for(:title) %></title>
 
-    <%= stylesheet_link_tag 'polaris_view_components', 'application' %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag "polaris_view_components", "application" %>
+    <%= javascript_include_tag "application" %>
     <% if Rails.env.development? %>
-      <%= javascript_include_tag 'hotwire-livereload', defer: true %>
+      <%= javascript_include_tag "hotwire-livereload", defer: true %>
     <% end %>
   </head>
 
   <body style="<%= polaris_body_styles %>">
-    <%= render 'layouts/flash_messages' %>
+    <%= render "layouts/flash_messages" %>
 
     <div class="app-wrapper">
       <div class="app-content">
