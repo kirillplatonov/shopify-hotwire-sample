@@ -1,16 +1,3 @@
-GIT
-  remote: https://github.com/kirillplatonov/shopify_app.git
-  revision: b68fa26e0a443ac49971852e25b9f80145931be7
-  specs:
-    shopify_app (18.1.1)
-      browser_sniffer (~> 1.4.0)
-      jwt (>= 2.2.3)
-      omniauth-rails_csrf_protection
-      omniauth-shopify-oauth2 (~> 2.3)
-      rails (> 5.2.1)
-      redirect_safely (~> 1.0)
-      shopify_api (~> 9.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,7 +79,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
-    browser_sniffer (1.4.0)
+    browser_sniffer (2.1.0)
     builder (3.2.4)
     capybara (3.37.1)
       addressable
@@ -104,6 +91,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
+    coderay (1.1.3)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
     debug (1.6.2)
@@ -115,21 +103,16 @@ GEM
       dotenv (= 2.8.1)
       railties (>= 3.2)
     erubi (1.11.0)
-    faraday (2.5.2)
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.0)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    graphql (2.0.13)
-    graphql-client (0.18.0)
-      activesupport (>= 3.0)
-      graphql
-    hashie (5.0.0)
+    hash_diff (1.1.1)
     hotwire-livereload (1.2.2)
       listen (>= 3.0.0)
       rails (>= 6.0.0)
+    httparty (0.20.0)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
@@ -149,6 +132,9 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     minitest (5.16.3)
     msgpack (1.5.6)
@@ -172,37 +158,22 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
-    oauth2 (2.0.8)
-      faraday (>= 0.17.3, < 3.0)
-      jwt (>= 1.0, < 3.0)
-      multi_xml (~> 0.5)
-      rack (>= 1.2, < 3)
-      snaky_hash (~> 2.0)
-      version_gem (~> 1.1)
-    omniauth (2.1.0)
-      hashie (>= 3.4.6)
-      rack (>= 2.2.3)
-      rack-protection
-    omniauth-oauth2 (1.8.0)
-      oauth2 (>= 1.4, < 3)
-      omniauth (~> 2.0)
-    omniauth-rails_csrf_protection (1.0.1)
-      actionpack (>= 4.2)
-      omniauth (~> 2.0)
-    omniauth-shopify-oauth2 (2.3.2)
-      activesupport
-      omniauth-oauth2 (~> 1.5)
+    oj (3.13.21)
+    openssl (3.0.1)
     pg (1.4.3)
     polaris_view_components (0.11.0)
       rails (>= 5.0.0)
       view_component (>= 2.0.0)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-rails (0.3.9)
+      pry (>= 0.10.4)
     public_suffix (5.0.0)
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
-    rack-protection (2.2.2)
-      rack
     rack-test (2.0.2)
       rack (>= 1.3)
     rails (7.0.3.1)
@@ -242,20 +213,32 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    securerandom (0.2.0)
     selenium-webdriver (4.4.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    shopify_api (9.5.1)
-      activeresource (>= 4.1.0)
-      graphql-client
-      rack
-    snaky_hash (2.0.0)
-      hashie
-      version_gem (~> 1.1)
+    shopify_api (11.1.0)
+      concurrent-ruby
+      hash_diff
+      httparty
+      jwt
+      oj
+      openssl
+      securerandom
+      sorbet-runtime
+      zeitwerk (~> 2.5)
+    shopify_app (20.1.1)
+      activeresource
+      browser_sniffer (~> 2.0)
+      jwt (>= 2.2.3)
+      rails (> 5.2.1)
+      redirect_safely (~> 1.0)
+      shopify_api (~> 11.1)
+      sprockets-rails (>= 2.0.0)
+    sorbet-runtime (0.5.10474)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -274,10 +257,8 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
-    version_gem (1.1.0)
-    view_component (2.71.0)
+    view_component (2.63.0)
       activesupport (>= 5.0.0, < 8.0)
-      concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
@@ -310,15 +291,17 @@ DEPENDENCIES
   jsbundling-rails
   pg (~> 1.1)
   polaris_view_components (~> 0.11.0)
+  pry-rails
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
   redis (~> 4.0)
   selenium-webdriver
-  shopify_app!
+  shopify_app
   sprockets-rails
   stimulus-rails
   turbo-rails
   tzinfo-data
+  view_component (<= 2.63.0)
   web-console
   webdrivers
 

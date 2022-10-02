@@ -40,25 +40,30 @@
   resolved "https://registry.yarnpkg.com/@rails/request.js/-/request.js-0.0.6.tgz#5f0347a9f363e50ec45118c7134080490cda81d8"
   integrity sha512-dfFWaQXitYJ4kxrgGJNhDNXX54/v10YgoJqBMVe6lhqs6a4N9WD7goZJEvwin82TtK8MqUNhwfyisgKwM6dMdg==
 
-"@shopify/app-bridge-utils@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-2.2.0.tgz#e51641c971ce8abda55ee116ed7dba64d4d2a37f"
-  integrity sha512-Jyi/FDh4TQmCD+p3t4/CJMvSJXcElzQ/qdpICcmWKFnwx9intRoPvOSvBRKocQVU2Ryg6V6FTyYa1hECCJIHCw==
+"@shopify/app-bridge-utils@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-utils/-/app-bridge-utils-3.3.2.tgz#09ef3012f24f9bbf77cd812380d2ac855fdccf8e"
+  integrity sha512-KzQFI6HDcwyE7h37ReL/jM/k3ZgRugLVjy0MeFqS+uCy8wPK0nJZC7bD9AqGSoMXNqJGWwJpZyjwGvWYXRDPgw==
   dependencies:
-    "@shopify/app-bridge" "^2.2.0"
+    "@shopify/app-bridge" "^3.3.2"
 
-"@shopify/app-bridge@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-2.2.0.tgz#8644647b6775a272125a0fee2ac681e49885fc27"
-  integrity sha512-NczLTpgeuFdPiPzLWP+45iuCT+/jl6PffTb6l0pVJknQ64FJmpURQQOwA8wEinl40u0Q1+Vus6Gk9m1V6A25/w==
+"@shopify/app-bridge@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-3.3.2.tgz#0de96a82c1152c91c3a3561edd4e78b8b4a812d9"
+  integrity sha512-9yCMXOtVQHvSb39Hz9HhxkXK6x9Gyjs0LxGAYRUnzguqZzXA+MwDac8GOr7Vzu974yI4eO05wmC5eW2Zez//gQ==
   dependencies:
     base64url "^3.0.1"
-    web-vitals "^2.1.4"
+    web-vitals "^3.0.1"
 
 base64url@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/base64url/-/base64url-3.0.1.tgz#6399d572e2bc3f90a9a8b22d5dbb0a32d33f788d"
   integrity sha512-ir1UPr3dkwexU7FdV8qBBbNDRUhMmIekYMFZfi+C/sLNnRESKPl23nB9b2pltqfOQNnGzsDdId90AEtG5tCx4A==
+
+debounce@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
+  integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
 
 dotenv@^16.0.2:
   version "16.0.2"
@@ -200,7 +205,7 @@ polaris-view-components@^0.11.0:
     "@hotwired/stimulus" "^3.0.1"
     "@rails/request.js" "^0.0.6"
 
-web-vitals@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.1.4.tgz#76563175a475a5e835264d373704f9dde718290c"
-  integrity sha512-sVWcwhU5mX6crfI5Vd2dC4qchyTqxV8URinzt25XqVh+bHEPGH4C3NPrNionCP7Obx59wrYEbNlw4Z8sjALzZg==
+web-vitals@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-3.0.2.tgz#a484109dc5d64bc4924f174267ce20e7cd4c7934"
+  integrity sha512-YygzeCdGpNrCHIjW14AI4SxMX2IcONhDvwhHc9KswCIixfSeVl08WdKDfzZaypq2ynRIG3lzGO3CO5dXYzc9+w==

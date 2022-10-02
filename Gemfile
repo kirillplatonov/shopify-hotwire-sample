@@ -13,7 +13,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "dotenv-rails"
 
 # shopify
-gem "shopify_app", github: "kirillplatonov/shopify_app"
+gem "shopify_app"
+# Version 2.64 contains regression that causes deadlocks:
+# https://github.com/ViewComponent/view_component/issues/1488
+gem "view_component", "<= 2.63.0"
 gem "polaris_view_components", "~> 0.11.0"
 
 # frontend
@@ -25,6 +28,7 @@ gem "hotwire-livereload"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "pry-rails"
 end
 
 group :development do

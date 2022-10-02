@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class AuthenticatedController < ApplicationController
-  include ShopifyApp::ShopHost
   include ShopifyApp::EnsureAuthenticatedLinks
   include ShopifyApp::Authenticated
 
@@ -19,12 +18,24 @@ class AuthenticatedController < ApplicationController
     { shop: @shop_origin }
   end
 
-  private
-    def set_shop_origin
-      @shop_origin = current_shopify_domain
-    end
+  # TODO: Fix this in shopify_app gem
+  def splash_page
+    splash_page_with_params(
+      return_to: request.fullpath,
+      shop: current_shopify_domain,
+      host: params[:host],
+      # This line is missing in shopify_app gem at the moment
+      embedded: params[:embedded],
+    )
+  end
 
-    def turbo_flashes
-      turbo_stream.replace("shopify-app-flash", partial: "layouts/flash_messages.html.erb")
-    end
+  private
+
+  def set_shop_origin
+    @shop_origin = current_shopify_domain
+  end
+
+  def turbo_flashes
+    turbo_stream.replace("shopify-app-flash", partial: "layouts/flash_messages.html.erb")
+  end
 end
