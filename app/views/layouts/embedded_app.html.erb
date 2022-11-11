@@ -10,9 +10,7 @@
 
     <%= stylesheet_link_tag "polaris_view_components", "application" %>
     <%= javascript_include_tag "application" %>
-    <% if Rails.env.development? %>
-      <%= javascript_include_tag "hotwire-livereload", defer: true %>
-    <% end %>
+    <%= hotwire_livereload_tags if Rails.env.development? %>
   </head>
 
   <body style="<%= polaris_body_styles %>">
@@ -28,7 +26,7 @@
 
     <%= content_tag(:div, nil, id: 'shopify-app-init', data: {
       api_key: ShopifyApp.configuration.api_key,
-      shop_origin: @shop_origin || (@current_shopify_session.domain if @current_shopify_session),
+      shop_origin: @shop_origin || (@current_shopify_session.shop if @current_shopify_session),
       host: @host,
       load_path: params[:return_to] || home_path,
       jwt_expire_at: (jwt_expire_at if @current_shopify_session),
