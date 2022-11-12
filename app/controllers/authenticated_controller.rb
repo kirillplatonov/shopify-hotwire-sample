@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class AuthenticatedController < ApplicationController
-  include ShopifyApp::ShopHost
   include ShopifyApp::EnsureAuthenticatedLinks
   include ShopifyApp::Authenticated
 
@@ -20,11 +19,12 @@ class AuthenticatedController < ApplicationController
   end
 
   private
-    def set_shop_origin
-      @shop_origin = current_shopify_domain
-    end
 
-    def turbo_flashes
-      turbo_stream.replace("shopify-app-flash", partial: "layouts/flash_messages.html.erb")
-    end
+  def set_shop_origin
+    @shop_origin = current_shopify_domain
+  end
+
+  def turbo_flashes
+    turbo_stream.replace("shopify-app-flash", partial: "layouts/flash_messages.html.erb")
+  end
 end

@@ -3,7 +3,7 @@
 The sample app includes:
 - JWT integration for [Hotwire Turbo](https://turbo.hotwired.dev/)
 - JWT integration for [Rails Request.JS](https://github.com/rails/request.js)
-- App Bridge 2.0
+- Integration with AppBridge 3.x
 - [Polaris ViewComponents](https://github.com/baoagency/polaris_view_components)
 - [Hotwire::Livereload](https://github.com/kirillplatonov/hotwire-livereload)
 
@@ -12,6 +12,12 @@ Since the `shopify_app` gem is not fully compatible with App Bridge 2 this sampl
 ![Shopify Hotwire Sample](.github/assets/preview.png)
 
 > The old App Bridge 1 sample can be found in `app-bridge-1` branch.
+> The old App Bridge 2 sample can be found in `app-bridge-2` branch.
+
+## Dependencies
+
+- Redis
+- Postgres
 
 ## OAuth Tunnel in Development
 
