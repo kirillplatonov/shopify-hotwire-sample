@@ -65,3 +65,7 @@ bin/dev
 ```
 
 5. Install and open this app on a development shop.
+
+## Billing
+
+This sample uses simple billing configuration provided by `shopify_app` gem. You can configure it in `config/initializers/shopify_app.rb` using `config.billing` setting.
