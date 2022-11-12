@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
-import FlashController from "./flash_controller.js"
+import FlashController from "./flash_controller"
 application.register("flash", FlashController)
+
+import RedirectController from "./redirect_controller"
+application.register("redirect", RedirectController)

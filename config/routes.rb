@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index]
   resource :messages, only: :create
+  resource :redirect, only: :new
 
   mount ShopifyApp::Engine, at: '/'
 end

@@ -15,4 +15,25 @@
       <% end %>
     <% end %>
   <% end %>
+
+  <%= polaris_card(title: "Redirects") do %>
+    <%= polaris_stack do |stack| %>
+      <% stack.item do %>
+        <%= polaris_button(url: new_redirect_path) { "Fullpage redirect" } %>
+      <% end %>
+      <% stack.item do %>
+        <%= polaris_button(
+          url: "/orders",
+          data: {controller: "redirect", action: "redirect#admin"}
+        ) { "Admin redirect" } %>
+      <% end %>
+      <% stack.item do %>
+        <%= polaris_button(
+          url: "https://shopify.dev",
+          data: {controller: "redirect", action: "redirect#remote"},
+          target: "_blank"
+        ) { "Remote redirect" } %>
+      <% end %>
+    <% end %>
+  <% end %>
 <% end %>
