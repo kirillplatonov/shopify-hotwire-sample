@@ -36,9 +36,11 @@ For more advanced tunnel setup check out article [Setting up Cloudflare Tunnel f
 
 ## Quick start
 
-To run this app locally, you can clone this repository and do the following.
+To run this sample locally, you can clone this repository and do the following.
 
-1. Connect to Shopify:
+1. Create a new app in your Shopify Partner account unless you already have one.
+
+2. Connect to Shopify:
 
 ```shell
 shopify app connect
@@ -46,22 +48,26 @@ shopify app connect
 
 It will generate `.env` file with Shopify API credentials.
 
-2. Add `HOST` with your cloudflare tunnel to `.env` file:
+3. Add `HOST` with your cloudflare tunnel to `.env` file:
 
 ```
-HOST=<Your SSH tunnel host>
+HOST=https://<Your tunnel host>
 ```
 
-3. Setup Rails app:
+4. Update your app URLs in the Shopify Partner dashboard to point to your tunnel.
+
+Set the `App URL` to `https://<your tunnel host>/` and the `Allowed redirection URL(s)` to `https://<your tunnel host>/auth/shopify/callback`.
+
+5. Setup Rails app:
 
 ```shell
 bin/setup
 ```
 
-4. Start the app:
+6. Start the app:
 
 ```shell
 bin/dev
 ```
 
-5. Install and open this app on a development shop.
+7. Install and open this app on a development shop.
