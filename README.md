@@ -71,3 +71,10 @@ bin/dev
 ```
 
 7. Install and open this app on a development shop.
+
+## Heroku Setup
+
+To run your app in Heroku you need add the Shopify API Key, Shopify API Secret and Host to your config vars. You find the API Key and API Secret in your app setup. The host is your heroku app domain.
+
+This templates config vars are:
+`SHOPIFY_API_KEY`, `SHOPIFY_API_SECRET`, `HOST`
