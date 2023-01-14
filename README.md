@@ -9,8 +9,10 @@ The sample app includes:
 
 ![Shopify Hotwire Sample](.github/assets/preview.png)
 
-> The old App Bridge 1 sample can be found in `app-bridge-1` branch.
-> The old App Bridge 2 sample can be found in `app-bridge-2` branch.
+## Previous versions
+
+- App Bridge 1 sample can be found in [`app-bridge-1`](https://github.com/kirillplatonov/shopify-hotwire-sample/tree/app-bridge-1) branch
+- App Bridge 2 sample can be found in [`app-bridge-2`](https://github.com/kirillplatonov/shopify-hotwire-sample/tree/app-bridge-2) branch
 
 ## Dependencies
 
