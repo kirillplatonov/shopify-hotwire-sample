@@ -7,8 +7,6 @@ The sample app includes:
 - [Polaris ViewComponents](https://github.com/baoagency/polaris_view_components)
 - [Hotwire::Livereload](https://github.com/kirillplatonov/hotwire-livereload)
 
-Since the `shopify_app` gem is not fully compatible with App Bridge 2 this sample uses fork.
-
 ![Shopify Hotwire Sample](.github/assets/preview.png)
 
 > The old App Bridge 1 sample can be found in `app-bridge-1` branch.
