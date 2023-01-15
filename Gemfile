@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby "3.2.0"
 
 # backend
 gem "rails", "~> 7.0.4"
@@ -13,7 +13,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "dotenv-rails"
 
 # shopify
-gem "shopify_app", "~> 21.2"
+gem "shopify_app", "~> 21.4"
 gem "polaris_view_components", "~> 0.12.0"
 
 # frontend
