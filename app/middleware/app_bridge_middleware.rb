@@ -9,7 +9,7 @@ class AppBridgeMiddleware
     if request.params.has_key?("shop") && !request.params.has_key?("host")
       shop = request.params["shop"]
       if request.url.include?("admin.shopify.com")
-      shop = shop.gsub("myshopify.com", "").gsub("myshopify.io", "")
+      shop = shop.gsub(".myshopify.com", "").gsub(".myshopify.io", "")
       host = Base64.urlsafe_encode64("admin.shopify.com/store/#{shop}", padding: false)
       else
       host = Base64.urlsafe_encode64("#{shop}/admin", padding: false)
