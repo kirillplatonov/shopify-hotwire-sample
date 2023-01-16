@@ -15,6 +15,7 @@ gem "dotenv-rails"
 # shopify
 gem "shopify_app", "~> 21.4"
 gem "polaris_view_components", "~> 0.12.0"
+gem "shopify_graphql", "~> 1.0"
 
 # frontend
 gem "sprockets-rails"
