@@ -1,6 +1,13 @@
 <%= polaris_page(title: "Home") do %>
   <%= polaris_card(title: "Button sample") do %>
-    <%= polaris_button(url: products_path) { "Products" } %>
+    <%= polaris_stack do |stack| %>
+      <% stack.item do %>
+        <%= polaris_button(url: products_path(graphql: true)) { "Products (Graphql)" } %>
+      <% end %>
+      <% stack.item do %>
+        <%= polaris_button(url: products_path) { "Products (REST)" } %>
+      <% end %>
+    <% end %>
   <% end %>
 
   <%= polaris_card(title: "Form sample") do %>

@@ -2,6 +2,11 @@
 
 class ProductsController < AuthenticatedController
   def index
-    @products = ShopifyAPI::Product.all(limit: 10)
+    @graphql = params[:graphql] == "true"
+    if @graphql
+      @products = GetProducts.call.data
+    else
+      @products = ShopifyAPI::Product.all(limit: 10)
+    end
   end
 end

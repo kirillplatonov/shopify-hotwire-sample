@@ -1,4 +1,7 @@
-<%= polaris_page(title: "Products", back_url: home_path) do %>
+<%= polaris_page(
+  title: "Products (#{@graphql ? "Graphql" : "REST"})",
+  back_url: home_path
+) do %>
   <%= polaris_card do %>
     <%= polaris_list do |list| %>
       <% @products.each do |product| %>
