@@ -5,7 +5,7 @@
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.2.4",
     "@rails/request.js": "^0.0.8",
-    "@shopify/app-bridge-utils": "^3.5.0",
+    "@shopify/app-bridge": "^3.7.2",
     "debounce": "^1.2.1",
     "dotenv": "^16.0.3",
     "esbuild": "^0.17.0",
