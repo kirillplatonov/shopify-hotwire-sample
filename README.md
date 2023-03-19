@@ -9,6 +9,8 @@ The sample app includes:
 
 ![Shopify Hotwire Sample](.github/assets/preview.png)
 
+> If you're using this sample app, please consider [becoming a sponsor](https://github.com/sponsors/kirillplatonov). It will help with the development of this project.
+
 ## Previous versions
 
 - App Bridge 1 sample can be found in [`app-bridge-1`](https://github.com/kirillplatonov/shopify-hotwire-sample/tree/app-bridge-1) branch
