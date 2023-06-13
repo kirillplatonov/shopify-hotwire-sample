@@ -74,6 +74,10 @@ bin/dev
 
 7. Install and open this app on a development shop.
 
+## Billing
+
+This sample uses simple billing configuration provided by `shopify_app` gem. You can configure it in `config/initializers/shopify_app.rb` using `config.billing` setting.
+
 ## Heroku Setup
 
 To run your app in Heroku you need add the Shopify API Key, Shopify API Secret and Host to your config vars. You find the API Key and API Secret in your app setup. The host is your heroku app domain.
