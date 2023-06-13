@@ -2,13 +2,13 @@
   "name": "shopify-hotwire-sample",
   "private": "true",
   "dependencies": {
-    "@hotwired/stimulus": "^3.1.1",
-    "@hotwired/turbo-rails": "^7.2.4",
-    "@rails/request.js": "^0.0.6",
-    "@shopify/app-bridge-utils": "^3.4.3",
+    "@hotwired/stimulus": "^3.2.1",
+    "@hotwired/turbo-rails": "^7.3.0",
+    "@rails/request.js": "^0.0.8",
+    "@shopify/app-bridge": "^3.7.4",
     "debounce": "^1.2.1",
     "dotenv": "^16.0.3",
-    "esbuild": "^0.15.13",
+    "esbuild": "^0.17.12",
     "polaris-view-components": "^0.12.0"
   },
   "scripts": {

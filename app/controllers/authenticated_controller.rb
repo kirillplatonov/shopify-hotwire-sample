@@ -2,7 +2,7 @@
 
 class AuthenticatedController < ApplicationController
   include ShopifyApp::EnsureAuthenticatedLinks
-  include ShopifyApp::Authenticated
+  include ShopifyApp::EnsureHasSession
 
   skip_before_action :redirect_to_splash_page, unless: -> { Rails.configuration.force_iframe }
 

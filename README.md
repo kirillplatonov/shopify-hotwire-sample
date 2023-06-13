@@ -7,12 +7,14 @@ The sample app includes:
 - [Polaris ViewComponents](https://github.com/baoagency/polaris_view_components)
 - [Hotwire::Livereload](https://github.com/kirillplatonov/hotwire-livereload)
 
-Since the `shopify_app` gem is not fully compatible with App Bridge 2 this sample uses fork.
-
 ![Shopify Hotwire Sample](.github/assets/preview.png)
 
-> The old App Bridge 1 sample can be found in `app-bridge-1` branch.
-> The old App Bridge 2 sample can be found in `app-bridge-2` branch.
+> If you're using this sample app, please consider [becoming a sponsor](https://github.com/sponsors/kirillplatonov). It will help with the development of this project.
+
+## Previous versions
+
+- App Bridge 1 sample can be found in [`app-bridge-1`](https://github.com/kirillplatonov/shopify-hotwire-sample/tree/app-bridge-1) branch
+- App Bridge 2 sample can be found in [`app-bridge-2`](https://github.com/kirillplatonov/shopify-hotwire-sample/tree/app-bridge-2) branch
 
 ## Dependencies
 
@@ -36,9 +38,11 @@ For more advanced tunnel setup check out article [Setting up Cloudflare Tunnel f
 
 ## Quick start
 
-To run this app locally, you can clone this repository and do the following.
+To run this sample locally, you can clone this repository and do the following.
 
-1. Connect to Shopify:
+1. Create a new app in your Shopify Partner account unless you already have one.
+
+2. Connect to Shopify:
 
 ```shell
 shopify app connect
@@ -46,26 +50,37 @@ shopify app connect
 
 It will generate `.env` file with Shopify API credentials.
 
-2. Add `HOST` with your cloudflare tunnel to `.env` file:
+3. Add `HOST` with your cloudflare tunnel to `.env` file:
 
 ```
-HOST=<Your SSH tunnel host>
+HOST=https://<Your tunnel host>
 ```
 
-3. Setup Rails app:
+4. Update your app URLs in the Shopify Partner dashboard to point to your tunnel.
+
+Set the `App URL` to `https://<your tunnel host>/` and the `Allowed redirection URL(s)` to `https://<your tunnel host>/auth/shopify/callback`.
+
+5. Setup Rails app:
 
 ```shell
 bin/setup
 ```
 
-4. Start the app:
+6. Start the app:
 
 ```shell
 bin/dev
 ```
 
-5. Install and open this app on a development shop.
+7. Install and open this app on a development shop.
 
 ## Billing
 
 This sample uses simple billing configuration provided by `shopify_app` gem. You can configure it in `config/initializers/shopify_app.rb` using `config.billing` setting.
+
+## Heroku Setup
+
+To run your app in Heroku you need add the Shopify API Key, Shopify API Secret and Host to your config vars. You find the API Key and API Secret in your app setup. The host is your heroku app domain.
+
+This templates config vars are:
+`SHOPIFY_API_KEY`, `SHOPIFY_API_SECRET`, `HOST`

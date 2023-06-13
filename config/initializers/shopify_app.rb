@@ -1,11 +1,12 @@
 ShopifyApp.configure do |config|
   config.application_name = "Shopify Hotwire Sample"
   config.old_secret = ""
-  config.scope = "read_products" # Consult this page for more scope options:
-                                  # https://help.shopify.com/en/api/getting-started/authentication/oauth/scopes
+  # Consult this page for more scope options:
+  # https://help.shopify.com/en/api/getting-started/authentication/oauth/scopes
+  config.scope = "read_products, write_products"
   config.embedded_app = true
   config.after_authenticate_job = false
-  config.api_version = "2022-10"
+  config.api_version = "2023-01"
   config.shop_session_repository = 'Shop'
 
   config.reauth_on_access_scope_changes = true

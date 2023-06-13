@@ -1,5 +1,5 @@
 import { Turbo } from "@hotwired/turbo-rails";
-import { getSessionToken } from "@shopify/app-bridge-utils";
+import { getSessionToken } from "@shopify/app-bridge/utilities";
 import createApp from '@shopify/app-bridge';
 import { setupRedirectHandler } from './navigation'
 
