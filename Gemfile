@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.1"
 
 # backend
-gem "rails", "~> 7.0.4"
+gem "rails", "~> 7.0.5"
 gem "pg", "~> 1.1"
 gem "redis", "~> 5.0"
 gem "puma", "~> 6.0"
@@ -13,8 +13,8 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "dotenv-rails"
 
 # shopify
-gem "shopify_app", "~> 21.4"
-gem "polaris_view_components", "~> 0.12.0"
+gem "shopify_app", "~> 21.5"
+gem "polaris_view_components", "~> 1.0.0"
 gem "shopify_graphql", "~> 1.0"
 
 # frontend
