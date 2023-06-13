@@ -5,7 +5,7 @@
   <%= polaris_card do %>
     <%= polaris_list do |list| %>
       <% @products.each do |product| %>
-        <% list.item { product.title } %>
+        <% list.with_item { product.title } %>
       <% end %>
     <% end %>
   <% end %>

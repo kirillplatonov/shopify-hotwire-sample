@@ -1,10 +1,10 @@
 <%= polaris_page(title: "Home") do %>
   <%= polaris_card(title: "Button sample") do %>
     <%= polaris_stack do |stack| %>
-      <% stack.item do %>
+      <% stack.with_item do %>
         <%= polaris_button(url: products_path(graphql: true)) { "Products (Graphql)" } %>
       <% end %>
-      <% stack.item do %>
+      <% stack.with_item do %>
         <%= polaris_button(url: products_path) { "Products (REST)" } %>
       <% end %>
     <% end %>
@@ -13,10 +13,10 @@
   <%= polaris_card(title: "Form sample") do %>
     <%= form_tag messages_path do %>
       <%= polaris_form_layout do |form_layout| %>
-        <% form_layout.item do %>
+        <% form_layout.with_item do %>
           <%= polaris_text_field(name: :message, label: "Flash message") %>
         <% end %>
-        <% form_layout.item do %>
+        <% form_layout.with_item do %>
           <%= polaris_button(primary: true, submit: true) { "Send" } %>
         <% end %>
       <% end %>
@@ -25,16 +25,16 @@
 
   <%= polaris_card(title: "Redirects") do %>
     <%= polaris_stack do |stack| %>
-      <% stack.item do %>
+      <% stack.with_item do %>
         <%= polaris_button(url: new_redirect_path) { "Fullpage redirect" } %>
       <% end %>
-      <% stack.item do %>
+      <% stack.with_item do %>
         <%= polaris_button(
           url: "/orders",
           data: {controller: "redirect", action: "redirect#admin"}
         ) { "Admin redirect" } %>
       <% end %>
-      <% stack.item do %>
+      <% stack.with_item do %>
         <%= polaris_button(
           url: "https://shopify.dev",
           data: {controller: "redirect", action: "redirect#remote"},
