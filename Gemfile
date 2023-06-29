@@ -22,7 +22,6 @@ gem "sprockets-rails"
 gem "jsbundling-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
-gem "hotwire-livereload"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -31,6 +30,7 @@ end
 group :development do
   gem "web-console"
   gem "pry-rails"
+  gem "hotwire-livereload"
 end
 
 group :test do
