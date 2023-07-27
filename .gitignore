@@ -40,3 +40,5 @@ yarn-debug.log*
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
+shopify.app.toml
