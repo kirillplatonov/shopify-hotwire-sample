@@ -5,13 +5,20 @@
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.3.0",
     "@rails/request.js": "^0.0.8",
+    "@shopify/app": "^3",
     "@shopify/app-bridge": "^3.7.8",
+    "@shopify/cli": "^3",
     "debounce": "^1.2.1",
     "dotenv": "^16.3.1",
     "esbuild": "^0.18.17",
     "polaris-view-components": "^1.1.0"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
+    "shopify": "shopify",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
   }
 }

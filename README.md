@@ -38,14 +38,18 @@ For more advanced tunnel setup check out article [Setting up Cloudflare Tunnel f
 
 ## Quick start
 
-To run this sample locally, you can clone this repository and do the following.
+To run this sample locally, you can clone this repository and follow these steps:
 
-1. Create a new app in your Shopify Partner account unless you already have one.
-
-2. Connect to Shopify:
+1. Connect to Shopify app:
 
 ```shell
-shopify app connect
+yarn shopify app config link
+```
+
+2. Pull Shopify app credentials:
+
+```shell
+yarn shopify app env pull
 ```
 
 It will generate `.env` file with Shopify API credentials.
