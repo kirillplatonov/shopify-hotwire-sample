@@ -1,5 +1,7 @@
 # Shopify Hotwire Sample
 
+> 🔒 Future updates to app template will be published in private repository available only for Github Sponsors. The new version with App Bridge 4, Shopify CLI 3, and the other improvements is already there. [Become a sponsor](https://github.com/sponsors/kirillplatonov) to get an access.
+
 The sample app includes:
 - JWT integration for [Hotwire Turbo](https://turbo.hotwired.dev/)
 - JWT integration for [Rails Request.JS](https://github.com/rails/request.js)
@@ -8,8 +10,6 @@ The sample app includes:
 - [Hotwire::Livereload](https://github.com/kirillplatonov/hotwire-livereload)
 
 ![Shopify Hotwire Sample](.github/assets/preview.png)
-
-> If you're using this sample app, please consider [becoming a sponsor](https://github.com/sponsors/kirillplatonov). It will help with the development of this project.
 
 ## Previous versions
 
